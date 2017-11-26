@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: upload_and_shorten\n"
 "POT-Creation-Date: 2016-10-16 15:47+0100\n"
-"PO-Revision-Date: 2017-11-26 10:17+0800\n"
-"Last-Translator: 漠伦 <i@molun.net>\n"
+"PO-Revision-Date: 2017-11-26 10:28+0800\n"
+"Last-Translator: 漠伦(Mo Lun) <i@molun.net>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -92,7 +92,7 @@ msgstr " 即刻缩短！ "
 
 #: ../YOURLS-Upload-and-Shorten/plugin.php:100
 msgid "This plugin is hosted at "
-msgstr "本插件运行于 "
+msgstr "本插件托管于 "
 
 #: ../YOURLS-Upload-and-Shorten/plugin.php:101
 msgid "If you like it, remember someone spends his time working on it. "
