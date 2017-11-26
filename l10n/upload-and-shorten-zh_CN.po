@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upload_and_shorten\n"
+"POT-Creation-Date: 2016-10-16 15:47+0100\n"
+"PO-Revision-Date: 2017-11-26 10:17+0800\n"
+"Last-Translator: 漠伦 <i@molun.net>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-KeywordsList: _;my_say__;gettext;gettext_noop;yourls__;yourls_e;"
+"yourls_s;yourls_se;yourls_esc_attr__;yourls_esc_html__;yourls_x;yourls_ex;"
+"yourls_esc_attr_x;yourls_esc_html_x;yourls_n:1,2;yourls_nx:1,2;"
+"yourls_n_noop:1,2;yourls_nx_noop:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:40
+msgid "Send a file to your webserver and create a short-URL for it."
+msgstr "上传一个文件到你的服务器，并为它准备一个短网址。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:46
+msgid "Select a file "
+msgstr "选择一个文件 "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:52
+msgid "YOURLS database options"
+msgstr "YOURLS 数据库选项"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:54
+msgid "Custom shortname: "
+msgstr "自定义短网址： "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:57
+msgid "Custom title: "
+msgstr "自定义标题： "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:63
+msgid "Filename conversions (optional)"
+msgstr "文件名转换（可选）"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:66
+msgid "No conversion "
+msgstr "不做转换 "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:67
+msgid "Filename will not be changed at all."
+msgstr "文件名将不会做出任何改动。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:71
+msgid "Browser-safe filename "
+msgstr "适合浏览器的文件名"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:72
+msgid "Recommended if the file should be accessed by web-browsers."
+msgstr "如果该文件需要通过网页浏览器访问，推荐使用此选项。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:76
+msgid "Randomize filename "
+msgstr "随机文件名 "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:77
+msgid ""
+"Browser-safe filenames with a slight protection against systematic crawling "
+"your web-directory."
+msgstr ""
+"修改为适合浏览器的文件名的同时提供一个微小的保护，以防止系统自动抓取你的网页"
+"目录。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:81
+msgid "Drop extension "
+msgstr "隐藏扩展名"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:82
+msgid "Hide the filetype. Can be combined with above options."
+msgstr "隐藏文件类型。可以与上述选项混合使用。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:84
+msgid ""
+"Some webservers won't send correct headers and web-browsers may not handle "
+"the file correctly."
+msgstr ""
+"一些网页服务器可能不会发送正确的文件头，使得网页浏览器无法正确处理文件。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:90
+msgid "  Go!  "
+msgstr " 即刻缩短！ "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:100
+msgid "This plugin is hosted at "
+msgstr "本插件运行于 "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:101
+msgid "If you like it, remember someone spends his time working on it. "
+msgstr "如果你喜欢它，请记得有人正耗费时间去让它更好。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:102
+msgid "A cup of coffee might stimulate further improvements. ;-) "
+msgstr "一杯咖啡可以激励他作出更多提高。;-) "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:113
+msgid "You need to select a file to upload."
+msgstr "你需要选择一个用以上传的文件。"
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:203
+msgid " successfully sent. These are the links to your file:"
+msgstr " 文件上传成功。以下是你的文件的链接："
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:204
+msgid "Direct: "
+msgstr "直链： "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:205
+msgid "Short:  "
+msgstr "短连接： "
+
+#: ../YOURLS-Upload-and-Shorten/plugin.php:208
+msgid "Upload failed, sorry! The error was "
+msgstr "很抱歉，上传失败！错误信息如下： "
