@@ -50,7 +50,7 @@ function my_upload_and_shorten_do_page() {
 	// YOURLS options
 	echo '
 	<fieldset> <legend>'.my_say__("YOURLS database options").'</legend>
-
+		<p><label><input type="checkbox" name="shorten_link">'.my_say__('Shorten the file link.').'</label></p>	
 		<p><label for="custom_shortname">'.my_say__("Custom shortname: ").'</label> 
 		<input type="text" id="custom_shortname" name="custom_shortname" />
 	
@@ -177,7 +177,7 @@ function my_upload_and_shorten_save_files() {
 	$my_upload_fullname = pathinfo($_FILES['file_upload']['name'], PATHINFO_BASENAME);
 
 	// move the file from /tmp/ to destination and initiate link creation
-	if(move_uploaded_file($_FILES['file_upload']['tmp_name'], $my_path)) {
+	if(move_uploaded_file($_FILES['file_upload']['tmp_name'], $my_path . $_FILES['file_upload']['name'])) {
 		// On success:
 		// obey custom shortname, if given:
 		$my_custom_shortname = '';
@@ -191,11 +191,12 @@ function my_upload_and_shorten_save_files() {
 		}
 		
 		// let YOURLS create the link:
-		$my_short_url = yourls_add_new_link($my_url.$my_final_file_name, $my_custom_shortname, $my_custom_title);
+		$shorten_link = isset($_POST['shorten_link']) && $_POST['shoten_link'] = "checked";
+		if ($shorten_link) $my_short_url = yourls_add_new_link($my_url.$my_final_file_name, $my_custom_shortname, $my_custom_title);
 		
 		return 	'<font color="green">"'.$my_upload_fullname.'"'.my_say__(" successfully sent. These are the links to your file:").'</font><br />'. 
-			my_say__("Direct: ").'<a href="'.$my_url.$my_final_file_name.'" target="_blank">'.$my_url.$my_final_file_name.'</a><br />'.
-			my_say__("Short:  ").'<a href="'.$my_short_url['shorturl'].'" target="_blank">'.$my_short_url['shorturl'].'</a>';
+			my_say__("Direct: ").'<a href="'.$my_url.$my_final_file_name.'" target="_blank">'.$my_url.$my_final_file_name.'</a>'.
+			($shorten_link ? "<br />".my_say__("Short:  ").'<a href="'.$my_short_url['shorturl'].'" target="_blank">'.$my_short_url['shorturl'].'</a>' : "");
 	}
 	else {
 		return '<font color="red">'.my_say__("Upload failed, sorry! The error was ").$_FILES['file_upload']['error'].'</font>';
